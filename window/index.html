@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta httpEquiv="X-UA-compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="player.js" ></script>
+        <link href="main.css" rel="stylesheet" />
+        <title>nexus-media</title>
+    </head>
+    <body>
+        <layer id="coverArt"></layer>
+        <grid id="mainDeck">
+            <grow>
+                <gcel id="naviCell">
+                    <grid>
+                        <grow>
+                            <gcel id="topNaviBar" class="">
+                                <div class="controlBox">
+                                    <input id="folderPath" class="fillParent" placeholder="/path/to/folder" />
+                                </div>
+                            </gcel>
+                        </grow>
+                        <grow>
+                            <gcel id="naviMenu" class="">
+                                <div class="scrollBox">
+                                    <div id="naviItemPlan" class="naviItemWrap" tabIndex="-1">
+                                        <div class="naviItemLine">
+                                            <grid>
+                                                <grow>
+                                                    <gcell class="naviItemCell dent"></gcell>
+                                                    <gcell class="naviItemCell togl">
+                                                        <i class="icon-chevron-right"></i>
+                                                    </gcell>
+                                                    <gcell class="naviItemCell icon">
+                                                        <i class="icon-folder2"></i>
+                                                    </gcell>
+                                                    <gcell class="naviItemCell text">
+                                                        <input class="naviItemText" readonly value="string" />
+                                                    </gcell>
+                                                </grow>
+                                            </grid>
+                                        </div>
+                                        <div class="naviItemDrop shut"></div>
+                                    </div>
+                                </div>
+                            </gcel>
+                        </grow>
+                    </grid>
+                </gcel>
+                <gcel id="viewCell">
+                    <grid>
+                        <grow>
+                            <gcel id="viewNaviBar" class="">
+                                <div class="controlBox">
+                                    <input id="searchPlaylist" class="fillParent" placeholder="something specific?" />
+                                </div>
+                            </gcel>
+                        </grow>
+                        <grow>
+                            <gcel id="viewMenu" class="">
+                                <div id="playList" class="scrollBox">
+                                    <div id="playItemPlan" class="playItemWrap" tabIndex="-1">
+                                        <grid class="playItemGrid">
+                                            <grow>
+                                                <gcel class="playItemCell name">song 1</gcel>
+                                                <gcel class="playItemCell from">/home/user/Music/foo</gcel>
+                                                <gcel class="playItemCell time">3:45</gcel>
+                                            </grow>
+                                        </grid>
+                                    </div>
+                                </div>
+                            </gcel>
+                        </grow>
+                        <grow>
+                            <gcel id="viewControls" class="">
+                                <div class="controlBox">
+                                    <grid>
+                                        <grow>
+                                            <gcel id="controlButtons">
+                                                <i class="icon-previous button"></i>
+                                                <i class="icon-play2 button"></i>
+                                                <i class="icon-pause button"></i>
+                                                <i class="icon-next button"></i>
+                                            </gcel>
+                                            <gcel class="">
+                                                <input type="range" id="seeker" min="0" max="100" />
+                                            </gcel>
+                                            <gcel id="volumeCell">
+                                                <i class="icon-signal button"></i>
+                                            </gcel>
+                                        </grow>
+                                    </grid>
+                                </div>
+                            </gcel>
+                        </grow>
+                    </grid>
+                </gcel>
+            </grow>
+        </grid>
+    </body>
+</html>

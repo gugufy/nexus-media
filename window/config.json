@@ -1,0 +1,9 @@
+{
+    "source":"${HOME}",
+    "styles":
+    {
+        "fontColoring": "0, 0, 100%, 1",
+        "deckColoring": "0, 0, 100%, 0.85",
+        "backDropPics": "(cover|front).(jpg|png)"
+    },
+}
